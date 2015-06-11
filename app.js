@@ -35,6 +35,7 @@ app.post('/users', function(req,res){
 	if(err){
 	  console.log(err)
 	} else {
+	  console.log(req.body.user);
 	  res.redirect('/users');
 	}
   })
